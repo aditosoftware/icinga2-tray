@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LED color show v1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">    
+    </style>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <div class="col-lg-12">
+            <form class="form-inline" name="configuration">
+                <div class="form-group" id="ipaddform">
+                    <label for="address">IP address:</label>
+                    <input type="text" class="form-control" id="address" name="ipaddress">
+                </div>
+                <div class="form-group" id="authform">
+                    <label for="authtoken">Auth token:</label>
+                    <input type="text" class="form-control" id="authtoken">
+                </div>
+                <div class="form-group" id="numbersledform">
+                    <label for="ledsnumber">Number of LEDs:</label>
+                    <input type="number" class="form-control" id="ledsnumber" min="0" max="1024">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="readConfigurationDevice();" id="readConfigButton">Read configuration</button>
+                <button type="button" class="btn btn-primary">Open file</button>
+                <button type="button" class="btn btn-primary">Save file</button>
+            </form>
+          </div>
+          <div class="col-lg-12 margintop20px">
+            <div class="form-group form-inline">
+                <label for="color">Colors (ms):</label>
+                <input type="number" class="form-control" id="colors" min="0">
+                <button type="button" class="btn btn-primary buttonplus">Add</button>
+                <button type="button" class="btn btn-primary" onclick="exit()">Exit</button>
+            </div>
+          </div>
+          <div class="col-lg-2 margintop20px">
+              <div class="col-lg-6 maring0px">
+                  <button type="button" class="btn btn-primary buttonplus btn-xs">del</button>
+                  <button type="button" class="btn btn-primary buttonplus btn-xs">copy</button>
+                  <button type="button" class="btn btn-primary buttonplus btn-xs">edit</button>
+              </div>
+              <div class="col-lg-6">
+                  <p onclick="test()">2033</p>
+              </div>
+          </div>
+          <div class="col-lg-10 margintop20px">
+            <div class="row iframeminheight">
+                <iframe class="col-lg-12 col-md-12 col-sm-12 paddingleft0" src="icolor.html" style="border:none" ></iframe>
+            </div>
+          </div>
+          <div class="col-lg-12 margintop20px">
+            <table>
+                <tr>
+                    <td>
+                        <label for="loop">Loops: </label>
+                    </td>
+                    <td>
+                        <input type="number" class="form-control" id="loops" min="0">        
+                    </td>
+                </tr>
+                <tr class="margintop20px">
+                    <td>
+                        <label for="colors">Color after loop: </label>
+                    </td>
+                    <td>
+                        <input type="number" class="form-control" id="colors" min="0">        
+                    </td>
+                </tr>
+            </table>
+          </div>
+          <div class="col-lg-6 margintop20px" >
+            <p>Memory usage: 234/509kb</p>
+          </div>
+          <div class="col-lg-6 margintop20px" style="text-align:right;">
+            <button type="button" class="btn btn-primary">Send configuration to device</button>
+          </div>
+      </div>
+  </body>
+</html>

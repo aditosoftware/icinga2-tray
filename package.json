@@ -1,0 +1,17 @@
+{
+  "name": "electron-icinga2",
+  "version": "1.0.0",
+  "description": "notification app",
+  "main": "main.js",
+  "scripts": {"start": "node electronstart.cmd C:\\electron-icinga2"},
+  "dependencies": {
+    "menubar": "~4.0.2",
+    "node-notifier": "~4.5.0"
+  },
+  "keywords": [
+    "icinga2",
+    "electron"
+  ],
+  "author": "a.walker",
+  "license": "MIT"
+}
