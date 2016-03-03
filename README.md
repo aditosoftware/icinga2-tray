@@ -2,7 +2,7 @@
 
 ## Description
 
-show screenshot in screenshot folder
+![alt tag](https://github.com/aditosoftware/icinga2-tray/blob/master/screenshot/tray_screenshot.png)
 
 Icinga2-Tray is a simple app, this can show your the service from icinga2, if this are in warning or error state.
 
