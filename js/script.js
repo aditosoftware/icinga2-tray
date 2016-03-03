@@ -166,15 +166,6 @@ function writeRow(pState, pServer, pServiceName, pOutput) {
   pOuptput.appendChild(pOuptputText);
   cOutput.appendChild(pOuptput);
 
-//  var pLink = document.createElement('a');
-//  
-//  //http://monitoring/icingaweb2/monitoring/service/show?host=mssql_hosting_vm&service=Windows_Dienst_TCP%2FIP-NetBIOS-Hilfsdienst
-//  var Servicelink = options.hostname + "/icingaweb2/monitoring/service/show?host=" + pServer + "&service=" + pServiceName;
-//  var pLinkText = document.createTextNode("Link");
-//  pLink.appendChild(pLinkText);
-//  pLink.href = Servicelink;
-//  cLink.appendChild(pLink);
-
   var Servicelink = "http://" + options.hostname + "/icingaweb2/monitoring/service/show?host=" + pServer + "&service=" + pServiceName;
   var pButton = document.createElement('BUTTON');
   var pButtonText = document.createTextNode("Open in browser");
