@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "notification app",
   "main": "main.js",
-  "scripts": {"start": "node electronstart.cmd C:\\electron-icinga2"},
+  "scripts": {"start": "electron ."},
   "dependencies": {
     "menubar": "~4.0.2",
     "node-notifier": "~4.5.0"

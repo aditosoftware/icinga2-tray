@@ -103,6 +103,10 @@ function start() {
             stateText = "Unknown";
             writeRow("unkn", server, servicename, output);
           }
+          if (state === 99){
+              stateText = "Pending";
+              writeRow("pend", server, servicename, output);
+          }
         } else {
           sendipc(name, false, server, servicename);
         }
@@ -134,6 +138,10 @@ function writeRow(pState, pServer, pServiceName, pOutput) {
   if (pState === "unkn") {
     sClass = "info";
     statesymbol = "glyphicon glyphicon-question-sign";
+  }
+  if (pState === "pend") {
+      sClass = 'warn';
+      statesymbol = "glyphicon glyphicon-exclamation-sign orange";
   }
 
   var table = document.getElementById("infotable");

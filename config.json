@@ -1,9 +1,9 @@
 {
   "api": {
-    "url": "monitoring.example.com",
+    "url": "localhost",
     "port": 5665,
-    "user": "apiUser",
-    "pass": "apiUserPass"
+    "user": "root",
+    "pass": "pass"
   },
   "refreshtime": 120
 }
