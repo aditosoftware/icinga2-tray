@@ -4,7 +4,7 @@ Icinga2-Tray is a little app written in javascript (electron) to get information
 This app will be run on windows and linux os
 
 ## Screenshot
-
+![Icinga2-Tray Screenshot](/screenshot/icinga2-tray-screenshot.PNG)
 
 ## Run app
 
