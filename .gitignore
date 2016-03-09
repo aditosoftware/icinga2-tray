@@ -2,3 +2,4 @@ electronstart.cmd
 node_modules
 nbproject
 .vscode
+config.json
