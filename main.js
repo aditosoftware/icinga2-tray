@@ -115,7 +115,7 @@ function startMainApp(pConfig) {
   var appTray = null;
   
   //create tray object
-  appTray = new Tray('img/logo.png');
+  appTray = new Tray(__dirname + '/img/logo.png');
   var contextMenu = Menu.buildFromTemplate([
     {
       label: "Hide",
