@@ -1,9 +1,0 @@
-{
-  "api": {
-    "url": "localhost",
-    "port": 5665,
-    "user": "root",
-    "pass": "pass"
-  },
-  "refreshtime": 120
-}

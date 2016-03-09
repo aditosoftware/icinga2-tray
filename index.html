@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="js/script.js"></script>
+
+<head>
+    <script type="text/javascript" src="js/mainapp.js"></script>
+    <link rel="stylesheet" href="css/photon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/custom.css">
-  </head>
-  <body onload="start()">
-    <div class="container-float nopadding" id="container">
-      <div class="col-xs-12 colorgray height25px">
-        <p class="pheader"> Icinga Tray v1.0.3 </p>
-        <button class="btn btn-default btn-xs buttonlLinks" onclick="quit()" title="Exit app"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-      </div>
-      <div class="col-xs-12 nopadding">
-        <table class="table table-striped" id="infotable">
-          <tbody>
-            <tr class="info tdname">
-              <td><p>State</p></td>
-              <td><p>Servername</p></td>
-              <td><p>Servicename</p></td>
-              <td><p>Command Output</p></td>
-              <td><p>Link</p><p></p></td>
-            </tr>
-          </tbody></table>
-      </div>
-  </body>
+</head>
+
+<body onload="start()">
+    <div class="window">
+        <header class="toolbar toolbar-header" style="-webkit-app-region: drag">
+            <h1 class="title">Icinga-Tray v1.1.0</h1>
+            <button class="btn btn-mini btn-default buttonExit" onclick="quit()"><span class="icon icon-cancel-squared"></span></button>
+            <button class="btn btn-mini btn-default buttonMinimize" onclick="minimize()"><span class="icon icon-minus-squared"></span></button>
+        </header>
+        <div class="container-float nopadding" id="container">
+            <div class="col-xs-12 nopadding">
+                <table class="table table-striped" id="infotable">
+                    <tbody>
+                        <tr class="info tdname">
+                            <td>
+                                <p>State</p>
+                            </td>
+                            <td>
+                                <p>Servername</p>
+                            </td>
+                            <td>
+                                <p>Servicename</p>
+                            </td>
+                            <td>
+                                <p>Command Output</p>
+                            </td>
+                            <td>
+                                <p>Link</p>
+                                <p></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

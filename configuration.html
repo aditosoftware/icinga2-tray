@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Configuration</title>
+    <link rel="stylesheet" href="css/photon.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/configuration.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header" style="-webkit-app-region: drag">
+            <h1 class="title">Icinga-Tray v1.1.0</h1>
+            <button class="btn btn-mini btn-default buttonExit" onclick="quit()"><span class="icon icon-cancel-squared"></span></button>    
+        </header>
+        <div class="window-content">
+            <div class="container-float nopadding" id="container">
+
+                <div class="col-xs-12">
+                    <h3><span class="glyphicon glyphicon-info-sign warning" aria-hidden="true"></span> Configuration</h3>
+                </div>
+                <div class="col-xs-12">
+                    <form name="frmConfig">
+                        <div class="form-group" id="urlform">
+                            <label for="urlinput">Monitoring Server URL (without http/s)</label>
+                            <input type="text" class="form-control" id="urlinput">
+                        </div>
+                        <div class="form-group">
+                            <label for="portinput">Monitoring API Port (default 5665)</label>
+                            <input type="text" class="form-control" id="portinput" placeholder="5665">
+                        </div>
+                        <div class="form-group" id="userform">
+                            <label for="userinput">Monitoring API User</label>
+                            <input type="text" class="form-control" id="userinput">
+                        </div>
+                        <div class="form-group" id="passform">
+                            <label for="inputpass">Password for API User</label>
+                            <input type="password" class="form-control" id="inputpass">
+                        </div>
+                        <div class="form-group">
+                            <label for="refreshinput">Refresh timeout (default 120 sec)</label>
+                            <input type="text" class="form-control" id="refreshinput" placeholder="120">
+                        </div>
+                        <button type="button" class="btn btn-default" style="float: right;" onclick="readConfig()">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

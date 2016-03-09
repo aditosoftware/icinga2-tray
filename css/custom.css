@@ -49,3 +49,23 @@ body {
 .warning {
   color: #FFC906;
 }
+
+.buttonExit, .buttonMinimize {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+}
+
+.buttonMinimize {
+    right: 20px;
+}
+
+.maxwidth600px{
+  max-width: 600px;
+}
+
+.maxwidth270px{
+  max-width: 270px;
+}
