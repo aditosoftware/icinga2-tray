@@ -1,0 +1,9 @@
+{
+  "api": {
+    "pass": "MA128mAms03mAld8mAkdm283mASDm",
+    "port": "5665",
+    "url": "monitoring.aditosoftware.local",
+    "user": "apiuser09342012"
+  },
+  "refreshtime": "120"
+}
