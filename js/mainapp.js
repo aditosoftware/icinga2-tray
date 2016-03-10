@@ -32,11 +32,11 @@ var str;
             "headers": "application/json",
             "auth": pConfig.api.user + ":" + pConfig.api.pass
         };
-
+        
         //add refrash site
         var meta = document.createElement('meta');
         meta.httpEquiv = "Refresh";
-        meta.content = pConfig.refresh;
+        meta.content = pConfig.refreshtime;
         document.getElementsByTagName('head')[0].appendChild(meta);
 
         callback = function (response) {
